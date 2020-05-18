@@ -24,11 +24,7 @@ steps:
   displayName: 'Copy Files to: $(build.artifactStagingDirectory)'
 
   inputs:
-
-    SourceFolder: 'MobileApp/SourceCode -Android'
-
     Contents: '**/*.apk'
-
     TargetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
